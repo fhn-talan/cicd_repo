@@ -1,0 +1,13 @@
+# .github/workflows/sql-deploy.yml
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: azure/sql-action@v2
+      with:
+        connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
+        path: './cicd_db_proj/bin/Debug/cicd_db.dacpac'
+        action: 'publish'
