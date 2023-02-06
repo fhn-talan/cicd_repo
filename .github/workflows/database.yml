@@ -8,6 +8,6 @@ jobs:
     - uses: actions/checkout@v3
     - uses: azure/sql-action@v2
       with:
-        connection-string: $GM_VM_SQL_CONNECTION_STRING
+        connection-string: 'Server=20.199.22.93\ILLICITLY7685; User ID=deploy; Password=${{ secrets.GM_VM_SQL_PWD }}; Initial Catalog=cicd; TrustServerCertificate=true'
         path: './cicd_db_proj/bin/Debug/cicd_db.dacpac'
         action: 'publish'
