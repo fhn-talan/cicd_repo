@@ -7,3 +7,4 @@ C:\Users\fhamon\Source\Repos\cicd_repo\cicd_db_proj\obj\Debug\Model.xml
 C:\Users\fhamon\Source\Repos\cicd_repo\cicd_db_proj\obj\Debug\refactor.xml
 C:\Users\fhamon\Source\Repos\cicd_repo\cicd_db_proj\obj\Debug\postdeploy.sql
 C:\Users\fhamon\Source\Repos\cicd_repo\cicd_db_proj\obj\Debug\predeploy.sql
+C:\Users\fhamon\Source\Repos\cicd_repo\cicd_db_proj\obj\Debug\cicd_db_proj.sqlprojAssemblyReference.cache
