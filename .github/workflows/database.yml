@@ -9,5 +9,5 @@ jobs:
     - uses: azure/sql-action@v2
       with:
         connection-string: 'Server=${{ vars.GM_VM_SQL_SERVER }}; User ID=${{ vars.GM_VM_SQL_USER }}; Password=${{ secrets.GM_VM_SQL_PWD }}; Initial Catalog=${{ vars.GM_VM_SQL_DB }}; TrustServerCertificate=true'
-        path: './cicd_db_proj/bin/Debug/cicd_db.dacpac'
+        path: './cicd_db_proj/bin/cicd_db.dacpac'
         action: 'publish'
