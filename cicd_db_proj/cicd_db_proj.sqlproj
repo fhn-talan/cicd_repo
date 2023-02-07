@@ -64,7 +64,4 @@
   <ItemGroup>
     <Build Include="tables\cicd_table.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="cicd_db_proj.refactorlog" />
-  </ItemGroup>
 </Project>
