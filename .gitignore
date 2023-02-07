@@ -1,0 +1,12 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/cicd_db_proj/obj/Debug
+
+/cicd_db_proj/.vs
+
+/cicd_db_proj/bin/*.txt
+/cicd_db_proj/bin/*.sql
+/cicd_db_proj/bin/*.dll
+/cicd_db_proj/bin/*.pdb

@@ -3,5 +3,6 @@
 	[id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
     [label] VARCHAR(32) NULL, 
     [date] DATE NULL, 
-    [description] VARCHAR(64) NULL
+    [description] VARCHAR(64) NULL, 
+    [quantity] TINYINT NULL
 )
