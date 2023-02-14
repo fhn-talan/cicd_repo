@@ -4,5 +4,6 @@
     [label] VARCHAR(32) NULL, 
     [date] DATE NULL, 
     [description] VARCHAR(64) NULL, 
-    [quantity] TINYINT NULL
+    [quantity] TINYINT NULL,
+	[active] BIT NULL
 )
