@@ -7,6 +7,11 @@ pool:
 
 steps:
 
+- task: DotNetCoreInstaller@0
+  displayName: Install .NET Core
+  inputs:
+    packageType: 'sdk'
+
 - task: MSBuild@1
   displayName: 'Build database'
   inputs:
