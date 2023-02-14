@@ -1,7 +1,21 @@
-- task: DotNetCoreCLI@2
+- task: MSBuild@1
+  displayName: 'Build database'
   inputs:
-    command: 'build'
-    projects: 'my project'
+    solution: 'cicd_db_proj/cicd_db_proj.sln'
+
+- task: CopyFiles@2
+    displayName: 'Extract dacpac'
+    inputs:
+        CleanTargetFolder: false
+        SourceFolder: '$(agent.builddirectory)\s\src\cicd_db_proj\bin\Debug\'
+        Contents: '*.dacpac'
+        TargetFolder: '$(build.artifactstagingdirectory)'
+
+  - task: PublishPipelineArtifact@1
+    displayName: 'Publish artifact'
+    inputs:        
+        targetPath: '$(build.artifactstagingdirectory)'
+        artifact: 'drop'
 
 - task: SqlDacpacDeploymentOnMachineGroup@0
   inputs:
