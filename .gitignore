@@ -8,6 +8,7 @@
 *.refactorlog
 
 /cicd_db_proj/obj/Debug
+/cicd_db_proj/bin/Debug
 
 /cicd_db_proj/bin/*.txt
 /cicd_db_proj/bin/*.sql
