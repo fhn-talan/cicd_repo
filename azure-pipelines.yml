@@ -1,0 +1,15 @@
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'my project'
+
+- task: SqlDacpacDeploymentOnMachineGroup@0
+  inputs:
+    TaskType: 'dacpac'
+    DacpacFile: 'repo/file.dacpac'
+    TargetMethod: 'server'
+    ServerName: 'myserver'
+    DatabaseName: 'mydb'
+    AuthScheme: 'sqlServerAuthentication'
+    SqlUsername: 'myuser'
+    SqlPassword: 'mypwh'
